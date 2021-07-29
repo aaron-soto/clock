@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/aaron-soto/clock/static/css/main.bc2faaa8.chunk.css",
+    "main.js": "/aaron-soto/clock/static/js/main.82bcef07.chunk.js",
+    "main.js.map": "/aaron-soto/clock/static/js/main.82bcef07.chunk.js.map",
+    "runtime-main.js": "/aaron-soto/clock/static/js/runtime-main.5a4e2a49.js",
+    "runtime-main.js.map": "/aaron-soto/clock/static/js/runtime-main.5a4e2a49.js.map",
+    "static/js/2.f7b16f5d.chunk.js": "/aaron-soto/clock/static/js/2.f7b16f5d.chunk.js",
+    "static/js/2.f7b16f5d.chunk.js.map": "/aaron-soto/clock/static/js/2.f7b16f5d.chunk.js.map",
+    "index.html": "/aaron-soto/clock/index.html",
+    "static/css/main.bc2faaa8.chunk.css.map": "/aaron-soto/clock/static/css/main.bc2faaa8.chunk.css.map",
+    "static/js/2.f7b16f5d.chunk.js.LICENSE.txt": "/aaron-soto/clock/static/js/2.f7b16f5d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a4e2a49.js",
+    "static/js/2.f7b16f5d.chunk.js",
+    "static/css/main.bc2faaa8.chunk.css",
+    "static/js/main.82bcef07.chunk.js"
+  ]
+}
