@@ -1,0 +1,200 @@
+.time {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #aba197;
+
+	h3 {
+		font-size: 24px;
+		margin-bottom: 0.8em;
+	}
+
+	h2 {
+		font-size: 32px;
+		font-family: "Roboto Mono", monospace;
+	}
+
+	&__clock {
+		$bg-color: #fff;
+		$seconds-color: #d6ccc2;
+		$minutes-color: #303030;
+		$hours-color: #303030;
+		$center-color: #303030;
+		$minute-tick-color: #303030;
+		$hour-tick-color: #303030;
+
+		$clock-size: 300px;
+		height: $clock-size;
+		width: $clock-size;
+		background-color: $bg-color;
+		border-radius: 50%;
+		position: relative;
+		border: 5px solid #aba197;
+
+		.minute-ticks {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+		}
+		.minute-ticks1 {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transform: rotate(30.5deg);
+		}
+		.minute-ticks2 {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transform: rotate(-30.5deg);
+		}
+		.minute-ticks3 {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transform: rotate(-60deg);
+		}
+		.minute-ticks4 {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transform: rotate(60deg);
+		}
+		.minute-ticks5 {
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			transform: rotate(90deg);
+		}
+
+		&__twelve-six,
+		&__three-nine,
+		&__ticks,
+		&__ticks1,
+		&__ticks2,
+		&__ticks3,
+		&__minuteTick {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			position: absolute;
+			height: 95%;
+			width: 100%;
+			top: 2.5%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+
+			.twelve,
+			.six,
+			.three,
+			.nine {
+				height: 7%;
+				width: 2px;
+				background-color: $hour-tick-color;
+			}
+
+			.tick {
+				height: 5%;
+				width: 2px;
+				background-color: $minute-tick-color;
+			}
+
+			.Mtick {
+				height: 3%;
+				width: 0.25px;
+				background-color: $minute-tick-color;
+			}
+		}
+
+		&__three-nine {
+			transform: rotate(90deg);
+		}
+
+		&__ticks {
+			transform: rotate(-30.5deg);
+		}
+		&__ticks1 {
+			transform: rotate(30.5deg);
+		}
+		&__ticks2 {
+			transform: rotate(60.5deg);
+		}
+		&__ticks3 {
+			transform: rotate(-60.5deg);
+		}
+
+		.mt1 {
+			transform: rotate(6deg);
+		}
+		.mt2 {
+			transform: rotate(12deg);
+		}
+		.mt3 {
+			transform: rotate(18deg);
+		}
+		.mt4 {
+			transform: rotate(24deg);
+		}
+
+		&-center {
+			$center-size: 3px;
+
+			height: $center-size;
+			width: $center-size;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background-color: $center-color;
+			border-radius: 50%;
+			z-index: 10;
+		}
+
+		&-seconds {
+			$seconds-hand-width: 2px;
+			width: $seconds-hand-width;
+			height: 40%;
+			border-radius: 5px;
+			background-color: $seconds-color;
+			position: absolute;
+			top: 10%;
+			// left: 50%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&-minutes {
+			width: 3px;
+			height: 40%;
+			border-radius: 5px;
+			background-color: $minutes-color;
+			position: absolute;
+			top: 10%;
+			// left: 50%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		&-hours {
+			width: 3px;
+			height: 30%;
+			border-radius: 5px;
+			background-color: $hours-color;
+			position: absolute;
+			top: 20%;
+			// left: 50%;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
